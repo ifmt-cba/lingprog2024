@@ -6,10 +6,24 @@ Exercícios sobre os comandos básicos em C
 */
 
 //1. Faça um programa que imprima o seu nome.
+void q01() {
+    printf("João Paulo\n");
+}
 
 //2. Faça um programa que imprima o produto dos valores 30 e 27.
+void q02() {
+    printf("Resultado: %d\n", 30*27);
+} 
 
 //3. Faça um programa que imprima a média aritmética entre os números 5, 8, 12.
+void q03() {
+    //int=inteiro    float=real    char=caractere   char[20]
+    int num1 = 5;
+    int num2 = 8;
+    int num3 = 12;
+    float media = (5+8+12)/3.0;
+    printf("Media de %d %d %d = %.2f\n", num1, num2, num3, media);
+}
 
 //4. Faça um programa que leia e imprima um número inteiro.
 
@@ -83,3 +97,9 @@ Exercícios sobre os comandos básicos em C
 //20. Faça um programa que efetue a apresentação do valor da conversão
 //    em real (R$) de um valor lido em dólar (US$). Para isso, será
 //    necessário também ler o valor da cotação do dólar.
+
+int main() {
+    q03();
+
+    return EXIT_SUCCESS;
+}
