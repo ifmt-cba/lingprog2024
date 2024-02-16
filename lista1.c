@@ -45,7 +45,7 @@ void q07() {
     scanf(" %50[^\n]",&nome);
     printf("Endereço: ");
     scanf(" %70[^\n]",&endereco);
-    printf("Nome: ");
+    printf("Telefone: ");
     scanf(" %14[^\n]",&telefone);
     printf("Nome: %s\nEndereço: %s\nTelefone: %s\n",nome,endereco,telefone);
 
