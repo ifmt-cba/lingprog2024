@@ -26,7 +26,12 @@ void q03() {
 }
 
 //4. Faça um programa que leia e imprima um número inteiro.
-
+void q04() {
+    int numero;
+    printf("Digite um número inteiro: ");
+    scanf("%d", &numero);
+    printf("Número digitado: %d", numero);
+}
 //5. Faça um programa que leia dois números reais e os imprima.
 
 //6. Faça um programa que leia um número inteiro e imprima o seu
@@ -34,6 +39,17 @@ void q03() {
 
 //7. Faça um programa que leia o nome o endereço e o telefone de
 //   um cliente e ao final, imprima esses dados.
+void q07() {
+    char nome[50], endereco[70], telefone[14];
+    printf("Nome: ");
+    scanf(" %50[^\n]",&nome);
+    printf("Endereço: ");
+    scanf(" %70[^\n]",&endereco);
+    printf("Nome: ");
+    scanf(" %14[^\n]",&telefone);
+    printf("Nome: %s\nEndereço: %s\nTelefone: %s\n",nome,endereco,telefone);
+
+}
 
 //8. Faça um programa que leia dois números inteiros e imprima a
 //   subtração deles.
