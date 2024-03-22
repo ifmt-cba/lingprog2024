@@ -7,14 +7,13 @@
 #include <time.h>
 #include <string.h>
 
-//1. Faça umprograma em C que armazene 15 números inteiros em umvetor e depois
+//1. Faça umprograma em C que armazene 15 números inteiros em um vetor e depois
 //permita que o usuário digite um número inteiro para ser buscado no vetor, se
 //for encontrado o programa deve imprimir a posição desse número no vetor, caso
 //contrário, deve imprimir a mensagem: "Nao encontrado!".
     
 //2. Faça umprograma que armazene 10 letras em um vetor e imprima uma listagem
 //numerada.
-solucao02();
 
 //3. Construa uma programa em C que armazene 15 números em um vetor e imprima
 //uma listagem numerada contendo o número e uma das mensagens: par ou ímpar.
