@@ -6,9 +6,40 @@ EXERCÍCIOS DO CAPÍTULO 3
 #include <stdlib.h>
 #include <math.h>
 
+//Deve ser utilizado quando se sabe o número de repetições
+void exemploPara() {
+	for (int cont = 0; cont < 10; cont++) {
+		printf("Olá\n");
+	}
+}
+//Você não sabe quantas repetições serão necessárias
+void exemploEnquanto() {
+	int opcao=1;
+	while (opcao != 0) {
+		printf("Digite uma opção (0 para sair): ")
+		scanf("%d", &opcao);
+		printf("Olá\n");
+	}
+}
+
+void exemploRepita() {
+	int opcao;
+	do {
+		printf("Olá\n");
+		printf("Digite uma opção (0 para sair): ")
+		scanf("%d", &opcao);
+	} while (opcao != 0);
+}
+
 //1.Faça um programa que imprima todos os números de 1 até 100.
 
 //2. Faça um programa que imprima todos os números pares de 100 até 1.
+void q02() {
+	for (int c = 100; c > 0; c-=2) {
+		printf("%d ", c);
+	}
+}
+
 
 //3. Faça um programa que imprima os múltiplos de 5, no intervalo de 1 até 500.
         
