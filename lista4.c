@@ -7,12 +7,42 @@
 #include <time.h>
 #include <string.h>
 
-//1. Faça umprograma em C que armazene 15 números inteiros em um vetor e depois
+//1. Faça um programa em C que armazene 15 números inteiros em um vetor e depois
 //permita que o usuário digite um número inteiro para ser buscado no vetor, se
 //for encontrado o programa deve imprimir a posição desse número no vetor, caso
 //contrário, deve imprimir a mensagem: "Nao encontrado!".
-    
-//2. Faça umprograma que armazene 10 letras em um vetor e imprima uma listagem
+void exemploMatriz() {
+  int matriz[3][3];
+  for (int l = 0; l < 3; l++) {
+    for (int c = 0; c < 3; c++) {
+      matriz[l][c] = l + c;
+    }
+  }
+
+  for (int l = 0; l < 3; l++) {
+    for (int c = 0; c < 3; c++) {
+      printf("%d ", matriz[l][c]);
+    }
+    printf("\n");
+  }
+}
+
+void q01() {
+  int numeros[15];
+  for (int i = 0; i < 15; i++) {
+    printf("Digite o %d número: ", i+1);
+    scanf("%d",&numeros[i]);
+  }
+  printf("Digite um número a ser localizado: ");
+  int busca;
+  scanf("%d", &busca);
+  for (int i = 0; i < 15; i++) {
+    if (numeros[i] == busca) {
+      printf("Número %d localizado na posição %d\n", busca, i);
+    }
+  }
+}
+//2. Faça um programa que armazene 10 letras em um vetor e imprima uma listagem
 //numerada.
 
 //3. Construa uma programa em C que armazene 15 números em um vetor e imprima
@@ -101,5 +131,7 @@
 //para a menor nota e imprima uma relação contendo todas as matrículas e médias.
 
 int main() {
+  exemploMatriz();
+  //q01();
   return EXIT_SUCCESS;
 }
